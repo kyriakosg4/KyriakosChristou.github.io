@@ -1,257 +1,1494 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Kyriakos Christou The Analyst Portfolio
-		</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			img {
-				max-width: 100%;
-				max-height: 100%;
-			}
-			.picture1 {
-				width: 80px;
-				height: 100px;
-			}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyriakos Christou – Blockchain Data Projects</title>
+    <meta name="description" content="Personal portfolio showcasing blockchain data and analytics projects by Kyriakos Christou.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kyriakos Christou – Blockchain Data Projects">
+    <meta property="og:description" content="Blockchain Research Analyst passionate about data-driven blockchain ecosystems.">
+    <meta property="og:type" content="website">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-			.picture2 {
-				width: 400px;
-				height: 400px;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --accent-blue: #0ea5e9;
+            --accent-violet: #a855f7;
+            --border: #e2e8f0;
+            --shadow: rgba(0, 0, 0, 0.1);
+            --gradient-start: #fdf4ff;
+            --gradient-end: #f0f9ff;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        .dark {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border: #334155;
+            --shadow: rgba(0, 0, 0, 0.3);
+            --gradient-start: #1e293b;
+            --gradient-end: #27272a;
+        }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Kyriakos Christou Analyst Portfolio<br />
-						</h1>
-						<p>Data analyst with a solid foundation in SQL, Python, Tableau, and Power BI. <a href="https://www.linkedin.com/in/kyriakos-christou-a80572232/">@kclkn</a>
-						</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Projects</a>
-					</header>
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-							<!-- <li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li> -->
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/kyriakos-christou-a80572232/" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/kyriakosg4" class=><span class="label">GitHub</span></a></li>
-							
-						</ul>
-					</nav>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/kyriakosg4/Data-Cleaning-Project/tree/main">Data Cleaning in SQL<br />
-									</a></h2>
-									<p>In this project we clean a dataset containing information 
-										about various companies worldwide, focusing on their layoff statistics, with
-										mySQL Workbench.<br />
-									<br />
-									</p>
-								</header>
-								<a href="https://github.com/kyriakosg4/Data-Cleaning-Project/tree/main" class="image main"><img src="images/istockphoto-1800292591-612x612.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/kyriakosg4/Data-Cleaning-Project/tree/main" class="button large">View Project</a></li>
-								</ul>
-							</article>
+        .dark nav {
+            background: rgba(15, 23, 42, 0.8);
+        }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-									
-										<h2><a href="https://github.com/kyriakosg4/COVID19-Project">Data Exploration in SQL<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/kyriakosg4/COVID-Project" class="image fit"><img src="images/images.jpg" alt="" /></a>
-									<p>Data Exploration of Covid 19 Dataset in SQL. The goal is to gain insights 
-										into the correlation between vaccination rates and COVID-19 death rates across different regions. </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/kyriakosg4/COVID19-Project" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/kyriakosg4/Amazon-Web-Scraper-Project">Automated Amazon Price Checker: A Web Scraping Project<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/kyriakosg4/Amazon-Web-Scraper-Project" class="image fit"><img src="images/amazon_scraping_06da274229.webp" alt="" /></a>
-									<p>This project leverages web scraping techniques to monitor and track the prices of products on Amazon. 
-										By automatically extracting and analyzing price data from product pages, it provides real-time updates 
-										and alerts when prices drop below a specified threshold. The project utilizes Python libraries such as BeautifulSoup and requests for scraping, and includes functionality for data logging and email notifications to keep users informed of price changes.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/kyriakosg4/Amazon-Web-Scraper-Project" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
+        nav.scrolled {
+            box-shadow: 0 4px 6px var(--shadow);
+        }
 
-										<h2><a href="https://github.com/kyriakosg4/Crypto-API-Project">Automated Cryptocurrency Data Collection via API Project<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/kyriakosg4/Crypto-API-Project" class="picture2"><img src="images/1713422_2d18.jpg" alt="" style="width: 200px; height: auto;"  /></a>
-									<p>This project leverages the CoinMarketCap API to fetch and process real-time cryptocurrency data. 
-										By utilizing Python, this application periodically retrieves the latest market information for the
-										top 15 cryptocurrencies, including their prices, percentage changes, and market capitalizations. 
-										The data is normalized and stored in a CSV file, providing a comprehensive and up-to-date dataset for
-										analysis. </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/kyriakosg4/Crypto-API-Project" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-							
-										<h2><a href="https://github.com/kyriakosg4/Bike-Sales-Project">Bike-Sales Project<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/kyriakosg4/Bike-Sales-Project"class="picture1"><img src="images/excel_logo2.jpg" alt="" /></a>
-									<p> Beginner project in Excel about, which contains a dashboard from a dataset that includes
-										 personal information about individuals who own a bike.
-										</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/kyriakosg4/Bike-Sales-Project" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-								
-										<h2><a href="https://github.com/kyriakosg4/Airbnb-Data-Visualization-Project-1">Airbnb Data Visualization Project<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/kyriakosg4/Airbnb-Data-Visualization-Project-1" class="image fit"><img src="images/Airbnb_Logo.jpg" alt="" /></a>
-									<p>Airbnb Analysis Dashboard, created with Tableau. Leveraging a detailed dataset from
-										Excel, we have crafted insightful visualizations that provide a deep dive into Airbnb
-										listings. </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/kyriakosg4/Airbnb-Data-Visualization-Project-1" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date"></span>
-										<h2><a href="https://github.com/kyriakosg4/Data-Professional-Survey">Data Professional Survey<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/kyriakosg4/Data-Professional-Survey" class="image fit"><img src="images/power-bi-software.jpg" alt="" /></a>
-									<p>This project involves the creation of an insightful Power BI dashboard based on a comprehensive survey
-										conducted within the data field. The survey aimed to gather and analyze responses from individuals
-										 working in various data-related roles.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/kyriakosg4/Data-Professional-Survey" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section>
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            cursor: pointer;
+        }
 
-					</div>
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<!--<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section> -->
-						<section class="split contact">
-							<!--<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section> -->
-							<section>
-								<h3>Phone</h3>
-								<p> <!-- <a href="#"> -->(+357) 99755660</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><!--<a href="#">-->kyris1926@gmail.com</a></p>
-							</section>
-							<!--<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section> -->
-						</section>
-					</footer>
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text-primary);
+        }
 
-			</div>
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .theme-toggle:hover {
+            background: var(--bg-secondary);
+        }
 
-	</body>
+        .theme-toggle svg {
+            width: 20px;
+            height: 20px;
+            stroke: var(--text-primary);
+        }
+
+        .hero {
+            padding: 8rem 0 4rem;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+        }
+
+        .dark .badge {
+            background: rgba(30, 41, 59, 0.8);
+        }
+
+        .badge svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--accent-violet);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            color: var(--text-secondary);
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 42rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.75rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+            color: white;
+            box-shadow: 0 4px 6px var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 12px var(--shadow);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+        }
+
+        .dark .btn-secondary {
+            background: rgba(30, 41, 59, 0.8);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-primary);
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .dark .social-link {
+            background: rgba(30, 41, 59, 0.8);
+        }
+
+        .social-link:hover {
+            background: var(--bg-primary);
+            transform: translateY(-2px);
+        }
+
+        .social-link svg {
+            width: 20px;
+            height: 20px;
+            stroke: var(--text-secondary);
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.125rem;
+        }
+
+        .view-all {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+
+        .view-all:hover {
+            gap: 0.75rem;
+        }
+
+        .view-all svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            padding: 0.75rem 1.25rem;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            transition: all 0.3s ease;
+        }
+
+        .dark .back-button {
+            background: rgba(30, 41, 59, 0.8);
+        }
+
+        .back-button:hover {
+            color: var(--text-primary);
+            transform: translateX(-4px);
+        }
+
+        .back-button svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .grid-break {
+            grid-column: 1 / -1;
+            height: 0;
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(168,85,247,0.06));
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(14,165,233,0.18);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            animation: slideUp 0.5s ease-out;
+            box-shadow: 0 6px 16px var(--shadow);
+        }
+
+        .dark .project-card {
+            background: linear-gradient(135deg, rgba(14,165,233,0.10), rgba(168,85,247,0.08));
+            border: 1px solid rgba(148,163,184,0.25);
+            box-shadow: 0 8px 18px var(--shadow);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px var(--shadow);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(168, 85, 247, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-detail-image {
+            width: 100%;
+            max-height: 500px;
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(168, 85, 247, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-detail-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 2rem;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover .project-title {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            line-height: 1.6;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .tag {
+            padding: 0.375rem 0.875rem;
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent-blue);
+        }
+
+        .project-actions {
+            display: flex;
+            gap: 0.75rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(14,165,233,0.18);
+        }
+
+        .dark .project-card .project-actions {
+            border-top: 1px solid rgba(148,163,184,0.25);
+        }
+
+        .project-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-btn-primary {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+            color: white;
+        }
+
+        .project-btn-primary:hover {
+            transform: scale(1.02);
+        }
+
+        .project-btn-secondary {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+        }
+
+        .project-btn-secondary:hover {
+            background: var(--bg-primary);
+        }
+
+        .project-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .project-detail {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .project-detail .project-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .project-detail .project-description {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .key-highlights {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .dark .key-highlights {
+            background: rgba(30, 41, 59, 0.8);
+        }
+
+        .key-highlights h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .key-highlights h3::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(to bottom, var(--accent-blue), var(--accent-violet));
+            border-radius: 2px;
+        }
+
+        .key-highlights ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .key-highlights li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            position: relative;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .key-highlights li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+
+        .tech-stack {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .dark .tech-stack {
+            background: rgba(30, 41, 59, 0.8);
+        }
+
+        .tech-stack h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tech-stack h3::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(to bottom, var(--accent-blue), var(--accent-violet));
+            border-radius: 2px;
+        }
+
+        .project-detail-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            padding: 3rem 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-secondary);
+            margin-top: 4rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .nav-links a:not(.theme-toggle) {
+                display: none;
+            }
+
+            .hero {
+                padding: 4rem 0 2rem;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo" onclick="showPage('home')">KC</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#projects" class="nav-link" data-page="projects">Projects</a></li>
+                <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                        <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg class="moon-icon" style="display: none;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="page active">
+        <section class="hero">
+            <div class="container">
+                <div class="badge">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                    </svg>
+                    Available for opportunities
+                </div>
+                
+                <h1>Hi, I'm <span class="gradient-text">Kyriakos Christou</span></h1>
+                <h2>Blockchain Research Analyst</h2>
+                <p class="bio">
+                    I'm a Blockchain Research Analyst passionate about data-driven blockchain ecosystems. My work focuses on building analytical pipelines, studying tokenomics models, and uncovering insights that support ecosystem growth and transparency.
+                </p>
+
+                <div class="btn-group">
+                    <a href="#projects" class="btn btn-primary" onclick="showPage('projects')">
+                        View Projects
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" onclick="showPage('contact')">Get in Touch</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/kyriakosg4" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/kyriakos-christou-a80572232" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <div class="social-link">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Cyprus
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h3 class="section-title">Featured <span class="gradient-text">Projects</span></h3>
+                        <p class="section-subtitle">Showcasing my latest work</p>
+                    </div>
+                    <a href="#projects" class="view-all" onclick="showPage('projects')">
+                        View All
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                         <img src="images/chain_pulse.jpg"
+                            alt="Chain Pulse cover"
+                            loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Chain Pulse</h4>
+                            <div class="project-tags">
+                                <span class="tag">data-pipeline</span>
+                                <span class="tag">blockchain</span>
+                                <span class="tag">ETL</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" onclick="showPage('project-chain-pulse'); return false;" class="project-btn project-btn-primary">
+                                    View Details
+                                </a>
+                                <a href="https://github.com/kyriakosg4/blockchain-Data-Science/tree/main/Chain-Pulse" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                         <img src="images/pow.png"
+                            alt="Economic Model Simulation (PoW) cover"
+                            loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Economic Model Simulation (PoW)</h4>
+                            <div class="project-tags">
+                                <span class="tag">data-science</span>
+                                <span class="tag">blockchain</span>
+                                <span class="tag">modeling</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" onclick="showPage('project-economic-model'); return false;" class="project-btn project-btn-primary">
+                                    View Details
+                                </a>
+                                <a href="https://github.com/kyriakosg4/blockchain-Data-Science/tree/main/Economic_Module_PoW" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                         <img src="images/error_clustering.jpg"
+                            alt="Error Clustering cover"
+                            loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Error Clustering and Faucet Analysis</h4>
+                            <div class="project-tags">
+                                <span class="tag">data-science</span>
+                                <span class="tag">blockchain</span>
+                                <span class="tag">user-ops</span>
+                                <span class="tag">analytics</span>
+                                <span class="tag">visualization</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" onclick="showPage('project-error-clustering'); return false;" class="project-btn project-btn-primary">
+                                    View Details
+                                </a>
+                                <a href="https://github.com/kyriakosg4/blockchain-Data-Science/tree/main/User_Ops_%20Error_Clustering_and_%20Faucet_Analysis_Project" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="projects" class="page">
+        <section style="padding-top: 4rem;">
+            <div class="container">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                         <img src="images/chain_pulse.jpg"
+                            alt="Chain Pulse cover"
+                            loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Chain Pulse</h4>
+                            <p class="project-description">
+                                End-to-end data engineering pipeline that collects, processes, and reports blockchain metrics across multiple chains.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">data-pipeline</span>
+                                <span class="tag">blockchain</span>
+                                <span class="tag">ETL</span>
+                                <span class="tag">automation</span>
+                                <span class="tag">aws</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" onclick="showPage('project-chain-pulse'); return false;" class="project-btn project-btn-primary">
+                                    View Details
+                                </a>
+                                <a href="https://github.com/kyriakosg4/blockchain-Data-Science/tree/main/Chain-Pulse" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                         <img src="images/pow.png"
+                            alt="Economic Model Simulation (PoW) cover"
+                            loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Economic Model Simulation (PoW)</h4>
+                            <p class="project-description">
+                                A data science simulation modeling agent behavior in a blockchain network under Proof-of-Work consensus.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">data-science</span>
+                                <span class="tag">blockchain</span>
+                                <span class="tag">modeling</span>
+                                <span class="tag">simulation</span>
+                                <span class="tag">economics</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" onclick="showPage('project-economic-model'); return false;" class="project-btn project-btn-primary">
+                                    View Details
+                                </a>
+                                <a href="https://github.com/kyriakosg4/blockchain-Data-Science/tree/main/Economic_Module_PoW" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                         <img src="images/error_clustering.jpg"
+                            alt="Error Clustering cover"
+                            loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Error Clustering and Faucet Analysis</h4>
+                            <p class="project-description">
+                                Blockchain data analysis project extracting and analyzing Account Abstraction testnet data with error clustering and faucet bot detection.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">data-science</span>
+                                <span class="tag">blockchain</span>
+                                <span class="tag">user-ops</span>
+                                <span class="tag">analytics</span>
+                                <span class="tag">visualization</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" onclick="showPage('project-error-clustering'); return false;" class="project-btn project-btn-primary">
+                                    View Details
+                                </a>
+                                <a href="https://github.com/kyriakosg4/blockchain-Data-Science/tree/main/User_Ops_%20Error_Clustering_and_%20Faucet_Analysis_Project" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-break"></div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                         <img src="images/lp.png"
+                            alt="LP Reward App cover"
+                            loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">LP Reward Model App</h4>
+                            <p class="project-description">
+                                Interactive Streamlit app to simulate LP reward programs: quadratic time-unlock APR for lockers, optional early-unlock penalty, flexible LP multipliers, and staged timelines with interactive charts.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">app</span>
+                                <span class="tag">defi</span>
+                                <span class="tag">streamlit</span>
+                                <span class="tag">analytics</span>
+                                <span class="tag">tokenomics</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" onclick="showPage('project-lp-reward-app'); return false;" class="project-btn project-btn-primary">View Details</a>
+                                <a href="https://github.com/kyriakosg4/blockchain-Data-Science/tree/main/streamlit-lp-reward-model-app" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="project-chain-pulse" class="page">
+        <section style="padding-top: 4rem;">
+            <div class="container">
+                <div class="project-detail">
+                    <a href="#" onclick="showPage('projects'); return false;" class="back-button">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                        Back to Projects
+                    </a>
+
+                    <h1 class="project-title"><span class="gradient-text">Chain Pulse</span></h1>
+                    <p class="project-description">
+                        End-to-end data engineering pipeline that collects, processes, and reports blockchain metrics across multiple chains. The system automates daily comparisons, enabling clear visibility into network performance and economic trends.
+                    </p>
+
+                    <div class="project-detail-image"></div>
+
+                    <div class="key-highlights">
+                        <h3>Key Highlights</h3>
+                        <ul>
+                            <li>Three-stage Lambda pipeline: Collector, Processor, Reporter</li>
+                            <li>Dual-mode architecture (local or AWS S3)</li>
+                            <li>Automated daily Markdown reports with visual charts</li>
+                            <li>Compares data across consecutive days for insights</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <h3>Tech Stack</h3>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">AWS Lambda</span>
+                            <span class="tag">EventBridge</span>
+                            <span class="tag">S3</span>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-actions">
+                        <a href="https://github.com/kyriakosg4/blockchain-Data-Science/tree/main/Chain-Pulse" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                            View on GitHub
+                        </a>
+                        <a href="#" onclick="showPage('projects'); return false;" class="btn btn-secondary">Back to Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="project-economic-model" class="page">
+        <section style="padding-top: 4rem;">
+            <div class="container">
+                <div class="project-detail">
+                    <a href="#" onclick="showPage('projects'); return false;" class="back-button">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                        Back to Projects
+                    </a>
+
+                    <h1 class="project-title"><span class="gradient-text">Economic Model Simulation (PoW)</span></h1>
+                    <p class="project-description">
+                        A data science simulation project that models the behavior of agents in a blockchain network under a Proof-of-Work consensus. The goal was to predict how different parameters affect agent activity, token circulation, and macroeconomic indicators using system dynamics and visualization.
+                    </p>
+
+                    <div class="project-detail-image"></div>
+
+                    <div class="key-highlights">
+                        <h3>Key Highlights</h3>
+                        <ul>
+                            <li>Built a modular simulation using cadCAD</li>
+                            <li>Modeled agent interactions (users, developers, miners, bundlers)</li>
+                            <li>Calculated and visualized metrics like APY, token velocity, and inflation rate</li>
+                            <li>Analyzed system equilibrium through parameter tuning and visual heatmaps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <h3>Tech Stack</h3>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">cadCAD</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Data Visualization</span>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-actions">
+                        <a href="https://github.com/kyriakosg4/blockchain-Data-Science/tree/main/Economic_Module_PoW" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                            View on GitHub
+                        </a>
+                        <a href="#" onclick="showPage('projects'); return false;" class="btn btn-secondary">Back to Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="project-error-clustering" class="page">
+        <section style="padding-top: 4rem;">
+            <div class="container">
+                <div class="project-detail">
+                    <a href="#" onclick="showPage('projects'); return false;" class="back-button">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                        Back to Projects
+                    </a>
+
+                    <h1 class="project-title"><span class="gradient-text">Error Clustering and Faucet Analysis</span></h1>
+                    <p class="project-description">
+                        A comprehensive blockchain data analysis project focused on extracting and analyzing data from an Account Abstraction (AA) testnet. The project performs error clustering across various components and includes faucet analysis to detect potential bot accounts based on sender activity patterns.
+                    </p>
+
+                    <div class="project-detail-image"></div>
+
+                    <div class="key-highlights">
+                        <h3>Key Highlights</h3>
+                        <ul>
+                            <li>Data collection at block and UserOperation event level from AA testnet</li>
+                            <li>Clustering of recurring UserOperation errors across different system components</li>
+                            <li>Visualization of error frequency and distribution patterns using multiple libraries</li>
+                            <li>Faucet click pattern analysis to identify and flag potential bot accounts</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <h3>Tech Stack</h3>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Web3.py</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Seaborn</span>
+                            <span class="tag">Plotly</span>
+                            <span class="tag">Aiohttp</span>
+                            <span class="tag">Jupyter Notebook</span>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-actions">
+                        <a href="https://github.com/kyriakosg4/blockchain-Data-Science/tree/main/User_Ops_%20Error_Clustering_and_%20Faucet_Analysis_Project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                            View on GitHub
+                        </a>
+                        <a href="#" onclick="showPage('projects'); return false;" class="btn btn-secondary">Back to Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="project-lp-reward-app" class="page">
+        <section style="padding-top: 4rem;">
+            <div class="container">
+                <div class="project-detail">
+                    <a href="#" onclick="showPage('projects'); return false;" class="back-button">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                        Back to Projects
+                    </a>
+                    <h1 class="project-title"><span class="gradient-text">LP Reward Model App</span></h1>
+                    <p class="project-description">
+                        A Streamlit application for modeling LP rewards in DeFi. Configure stage timelines, apply quadratic time-unlock APR for lockers (with optional early-unlock penalty), and scale flexible-liquidity rewards via bucket multipliers. Explore outcomes with interactive tables and Plotly charts.
+                    </p>
+                    <div class="project-detail-image"></div>
+                    <div class="key-highlights">
+                        <h3>Key Highlights</h3>
+                        <ul>
+                            <li>Configurable staged timeline for LP incentives</li>
+                            <li>Quadratic APR unlock for lockers; optional early-unlock penalty</li>
+                            <li>Flexible LP rewards via bucket multipliers and fixed stage shares</li>
+                            <li>Interactive tables and Plotly charts for APR, liquidity, and combined rewards</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <h3>Tech Stack</h3>
+                        <div class="project-tags">
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Plotly</span>
+                            <span class="tag">Jupyter</span>
+                        </div>
+                    </div>
+                    <div class="project-detail-actions">
+                        <a href="https://github.com/kyriakosg4/blockchain-Data-Science/tree/main/streamlit-lp-reward-model-app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                            View on GitHub
+                        </a>
+                        <a href="#" onclick="showPage('projects'); return false;" class="btn btn-secondary">Back to Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="about" class="page">
+        <section style="padding-top: 4rem;">
+            <div class="container">
+                <h1 class="section-title" style="margin-bottom: 1rem;">About <span class="gradient-text">Me</span></h1>
+                <p class="section-subtitle" style="margin-bottom: 3rem;">Learn more about my background and expertise</p>
+
+                <div style="max-width: 800px;">
+                    <div style="background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid var(--border); border-radius: 1rem; padding: 2rem; margin-bottom: 2rem;">
+                        <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8;">
+                            I'm a Blockchain Research Analyst passionate about data-driven blockchain ecosystems. My work focuses on building analytical pipelines, studying tokenomics models, and uncovering insights that support ecosystem growth and transparency.
+                        </p>
+                    </div>
+
+                    <div style="background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid var(--border); border-radius: 1rem; padding: 2rem;">
+                        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="width: 4px; height: 24px; background: linear-gradient(to bottom, var(--accent-blue), var(--accent-violet)); border-radius: 2px;"></span>
+                            Get in Touch
+                        </h2>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <a href="mailto:kyris1926@gmail.com" style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 0.75rem; text-decoration: none; color: var(--text-primary); transition: all 0.3s ease;">
+                                <div style="padding: 0.5rem; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(168, 85, 247, 0.1)); border-radius: 0.5rem;">
+                                    <svg style="width: 20px; height: 20px; stroke: var(--accent-blue);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 600; margin-bottom: 0.25rem;">Email</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-secondary);">kyris1926@gmail.com</p>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/kyriakosg4" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 0.75rem; text-decoration: none; color: var(--text-primary); transition: all 0.3s ease;">
+                                <div style="padding: 0.5rem; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(168, 85, 247, 0.1)); border-radius: 0.5rem;">
+                                    <svg style="width: 20px; height: 20px; stroke: var(--accent-blue);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 600; margin-bottom: 0.25rem;">GitHub</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-secondary);">View my repositories</p>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/kyriakos-christou-a80572232" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 0.75rem; text-decoration: none; color: var(--text-primary); transition: all 0.3s ease;">
+                                <div style="padding: 0.5rem; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(168, 85, 247, 0.1)); border-radius: 0.5rem;">
+                                    <svg style="width: 20px; height: 20px; stroke: var(--accent-blue);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                                        <circle cx="4" cy="4" r="2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 600; margin-bottom: 0.25rem;">LinkedIn</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-secondary);">Connect professionally</p>
+                                </div>
+                            </a>
+
+                            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 0.75rem;">
+                                <div style="padding: 0.5rem; background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(168, 85, 247, 0.1)); border-radius: 0.5rem;">
+                                    <svg style="width: 20px; height: 20px; stroke: var(--accent-blue);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 600; margin-bottom: 0.25rem;">Location</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-secondary);">Cyprus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact" class="page">
+        <section style="padding-top: 4rem;">
+            <div class="container">
+                <h1 class="section-title" style="margin-bottom: 1rem;">Get in <span class="gradient-text">Touch</span></h1>
+                <p class="section-subtitle" style="margin-bottom: 3rem;">Have a project in mind or want to collaborate? Send me a message!</p>
+
+                <div style="max-width: 600px;">
+                    <div style="background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid var(--border); border-radius: 1rem; padding: 2rem;">
+                        <form id="contactForm" onsubmit="handleSubmit(event)">
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Name</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    required
+                                    style="width: 100%; padding: 0.875rem 1rem; border-radius: 0.5rem; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-primary); font-size: 1rem; transition: all 0.3s ease;"
+                                />
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                    style="width: 100%; padding: 0.875rem 1rem; border-radius: 0.5rem; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-primary); font-size: 1rem; transition: all 0.3s ease;"
+                                />
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="6" 
+                                    required
+                                    style="width: 100%; padding: 0.875rem 1rem; border-radius: 0.5rem; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-primary); font-size: 1rem; resize: vertical; transition: all 0.3s ease;"
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                                </svg>
+                                Send Message
+                            </button>
+                        </form>
+
+                        <button type="button" id="activateEmailBtn" class="btn btn-secondary" style="width:100%; justify-content:center; margin-top:0.75rem;">
+                            Activate email (one-time)
+                        </button>
+                        <form id="activateEmailForm" action="https://formsubmit.co/kyris1926%40gmail.com" method="POST" style="display:none;">
+                            <input type="hidden" name="_subject" value="Portfolio Contact activation">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="name" value="Activation">
+                            <input type="hidden" name="email" value="no-reply@example.com">
+                            <input type="hidden" name="message" value="Activation submit">
+                        </form>
+
+                        <div id="formMessage" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.5rem;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kyriakos Christou. Built with HTML, CSS & JavaScript.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+            
+            body.classList.toggle('dark');
+            
+            if (body.classList.contains('dark')) {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            } else {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (prefersDark) {
+                document.body.classList.add('dark');
+                document.querySelector('.sun-icon').style.display = 'none';
+                document.querySelector('.moon-icon').style.display = 'block';
+            }
+        });
+
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.dataset.page === pageId) link.classList.add('active');
+            });
+
+            if (pageId.startsWith('project-')) {
+                document.querySelector('[data-page="projects"]').classList.add('active');
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                showPage(link.dataset.page);
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formMessage = document.getElementById('formMessage');
+            const name = form.name.value.trim();
+            const email = form.email.value.trim();
+            const message = form.message.value.trim();
+
+            // FormSubmit AJAX endpoint (no account needed).
+            // IMPORTANT: keep the email exactly as shown or URL-encode it.
+            const endpoint = "https://formsubmit.co/ajax/kyris1926%40gmail.com";
+
+            const submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = 0.8;
+
+            fetch(endpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    message,
+                    _subject: `Portfolio Contact from ${name}`,
+                    _captcha: "false"
+                })
+            })
+            .then(res => res.ok ? res.json() : Promise.reject(res))
+            .then(() => {
+                form.reset();
+                formMessage.style.display = 'block';
+                formMessage.style.background = 'rgba(34, 197, 94, 0.10)';
+                formMessage.style.border = '1px solid rgba(34, 197, 94, 0.20)';
+                formMessage.style.color = '#16a34a';
+                formMessage.textContent = '✓ Thanks! Your message was sent successfully.';
+                setTimeout(() => { formMessage.style.display = 'none'; }, 6000);
+            })
+            .catch(() => {
+                formMessage.style.display = 'block';
+                formMessage.style.background = 'rgba(239, 68, 68, 0.10)';
+                formMessage.style.border = '1px solid rgba(239, 68, 68, 0.20)';
+                formMessage.style.color = '#dc2626';
+                formMessage.textContent = 'Something went wrong. Please try again later.';
+                setTimeout(() => { formMessage.style.display = 'none'; }, 6000);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = 1;
+            });
+        }
+
+        const activateBtn = document.getElementById('activateEmailBtn');
+        const activateForm = document.getElementById('activateEmailForm');
+        if (activateBtn && activateForm) {
+            activateBtn.addEventListener('click', () => {
+                activateForm.submit(); // standard POST to trigger FormSubmit confirmation email
+            });
+        }
+    </script>
+</body>
 </html>
