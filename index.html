@@ -528,7 +528,10 @@
         .project-btn svg {
             width: 16px;
             height: 16px;
+            stroke: currentColor;   /* ensures the GitHub outline icon uses the button text color */
+            flex-shrink: 0;         /* prevents squashing in flex layout */
         }
+
 
         .project-detail {
             max-width: 900px;
