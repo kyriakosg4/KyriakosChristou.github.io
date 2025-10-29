@@ -1060,7 +1060,46 @@
                         </div>
                       </div>
                     </div> <!-- ✅ closes Ethereum card -->
-                    
+                    <!-- Light Banking System App (Flask + Striga) -->
+                    <div class="project-card">
+                      <div class="project-image">
+                        <!-- update the image filename if you use a different one -->
+                        <img src="images/light_banking.jpg" alt="Light Banking System App cover" loading="lazy">
+                      </div>
+                      <div class="project-content">
+                        <h4 class="project-title">Light Banking System App</h4>
+                        <p class="project-description">
+                          Lightweight Flask banking demo that integrates with Striga’s sandbox: signed API calls (HMAC+MD5), live EUR & crypto
+                          wallets, deposit details (IBAN/BIC or crypto address), cards and transactions, and real-time UI updates via webhooks & SSE.
+                          Outbound actions (SEPA send, crypto withdraw) are safe local simulations that drive realistic activity.
+                        </p>
+                        <div class="project-tags">
+                          <span class="tag">flask</span>
+                          <span class="tag">striga</span>
+                          <span class="tag">webhooks</span>
+                          <span class="tag">sse</span>
+                          <span class="tag">demo-app</span>
+                        </div>
+                        <div class="project-actions">
+                          <a href="#" onclick="showPage('project-render-flask'); return false;" class="project-btn project-btn-primary">
+                            View Details
+                          </a>
+                          <a href="https://github.com/kyriakosg4/render-flask-deployment" target="_blank" rel="noopener noreferrer"
+                             class="project-btn project-btn-secondary">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61
+                                       c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77
+                                       A5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48
+                                       a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1
+                                       A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78
+                                       c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            GitHub
+                          </a>
+                        </div>
+                      </div>
+                    </div>                
                 </div> <!-- ✅ closes .projects-grid -->
             </div> <!-- ✅ closes .container -->
         </section>
@@ -1357,6 +1396,72 @@
       </section>
     </div>
     <!-- === END ETHEREUM GAS FEE ANALYSIS & FORECASTING DETAIL PAGE === -->
+    
+    <!-- ===================== LIGHT BANKING SYSTEM APP DETAIL PAGE ===================== -->
+    <div id="project-render-flask" class="page">
+      <section style="padding-top: 4rem;">
+        <div class="container">
+          <div class="project-detail">
+            <a href="#" onclick="showPage('projects'); return false;" class="back-button">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Back to Projects
+            </a>
+    
+            <h1 class="project-title"><span class="gradient-text">Light Banking System App</span></h1>
+            <p class="project-description">
+              A lightweight banking demo built in Flask that connects to Striga’s sandbox to show how a real consumer app could
+              look and behave—without touching real money. It signs every request like production (HMAC + MD5), pulls live data
+              for the active user (KYC status, EUR &amp; crypto wallets, balances, IBAN/BIC or deposit addresses, cards and
+              transactions), and updates the browser in real time through webhooks and Server-Sent Events. Outbound actions are
+              safe, local simulations (SEPA send &amp; crypto withdraw) that produce realistic activity so totals and histories
+              refresh exactly as they would in production.
+            </p>
+    
+            <div class="project-detail-image"></div>
+    
+            <div class="key-highlights">
+              <h3>Key Highlights</h3>
+              <ul>
+                <li>Production-style request signing (HMAC + MD5) to Striga’s sandbox APIs</li>
+                <li>Live EUR accounts &amp; crypto wallets with deposit details (IBAN/BIC or blockchain address)</li>
+                <li>Real-time UI updates via webhooks → SSE for KYC, transactions, and card status</li>
+                <li>Safe demo flows: simulated SEPA send and crypto withdrawal that drive live updates</li>
+                <li>Admin screen to register users and “Set Active” (impersonation) for demos</li>
+              </ul>
+            </div>
+    
+            <div class="tech-stack">
+              <h3>Tech Stack</h3>
+              <div class="project-tags">
+                <span class="tag">Flask</span>
+                <span class="tag">Python</span>
+                <span class="tag">Striga</span>
+                <span class="tag">Webhooks</span>
+                <span class="tag">SSE</span>
+              </div>
+            </div>
+    
+            <div class="project-detail-actions">
+              <a href="https://github.com/kyriakosg4/render-flask-deployment" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61
+                           c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77
+                           A5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48
+                           a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1
+                           A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78
+                           c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                View on GitHub
+              </a>
+              <a href="#" onclick="showPage('projects'); return false;" class="btn btn-secondary">Back to Projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
 
     <div id="about" class="page">
