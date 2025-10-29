@@ -1038,8 +1038,8 @@
                           <span class="tag">analytics</span>
                         </div>
                         <div class="project-actions">
-                          <a href="#" onclick="showPage('project-eth-gas-fee'); return false;"
-                             class="project-btn project-btn-primary">View Details</a>
+                          <a href="index.html#project-eth-gas-fee" target="_blank" rel="noopener"
+                            class="project-btn project-btn-primary">View Details</a>
                           <a href="https://github.com/kyriakosg4/Ethereum-Gas-Fee-Analysis-and-Forecasting/blob/main/analysis.ipynb"
                              target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">GitHub</a>
                         </div>
@@ -1521,6 +1521,13 @@
 
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        window.addEventListener('DOMContentLoaded', () => {
+          const hash = window.location.hash && window.location.hash.slice(1);
+          if (hash && document.getElementById(hash)) {
+            showPage(hash);
+          }
+        });
 
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
