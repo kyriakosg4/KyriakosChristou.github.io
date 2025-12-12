@@ -1098,7 +1098,65 @@
                           </a>
                         </div>
                       </div>
-                    </div>                
+                    </div>
+                    <!-- Blockchain Insights Pipeline -->
+                    <div class="project-card">
+                      <div class="project-image">
+                        <img src="images/blockchain_pipeline.jpg"
+                             alt="Blockchain Insights Pipeline cover"
+                             loading="lazy">
+                      </div>
+                    
+                      <div class="project-content">
+                        <h4 class="project-title">Blockchain Insights Pipeline</h4>
+                    
+                        <p class="project-description">
+                          Production-grade ETL and analytics pipeline for Ethereum on-chain data using
+                          Airflow, PostgreSQL, and dbt with live ingestion, gap repair, and automated transformations.
+                        </p>
+                    
+                        <div class="project-tags">
+                          <span class="tag">data-engineering</span>
+                          <span class="tag">blockchain</span>
+                          <span class="tag">airflow</span>
+                          <span class="tag">dbt</span>
+                          <span class="tag">etl</span>
+                          <span class="tag">postgresql</span>
+                          <span class="tag">docker</span>
+                        </div>
+                    
+                        <div class="project-actions">
+                          <a href="#"
+                             onclick="showPage('project-blockchain-insights'); return false;"
+                             class="project-btn project-btn-primary">
+                            View Details
+                          </a>
+                    
+                          <a href="https://github.com/kyriakosg4/Blockchain_Insights_Pipeline"
+                             target="_blank"
+                             rel="noopener noreferrer"
+                             class="project-btn project-btn-secondary">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87
+                                       a3.37 3.37 0 0 0-.94-2.61
+                                       c3.14-.35 6.44-1.54 6.44-7
+                                       A5.44 5.44 0 0 0 20 4.77
+                                       A5.07 5.07 0 0 0 19.91 1
+                                       S18.73.65 16 2.48
+                                       a13.38 13.38 0 0 0-7 0
+                                       C6.27.65 5.09 1 5.09 1
+                                       A5.07 5.07 0 0 0 5 4.77
+                                       a5.44 5.44 0 0 0-1.5 3.78
+                                       c0 5.42 3.3 6.61 6.44 7
+                                       A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            GitHub
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
                 </div> <!-- ✅ closes .projects-grid -->
             </div> <!-- ✅ closes .container -->
         </section>
@@ -1463,6 +1521,75 @@
         </div>
       </section>
     </div>
+
+    <div id="project-blockchain-insights" class="page">
+      <section style="padding-top: 4rem;">
+        <div class="container">
+          <div class="project-detail">
+    
+            <a href="#" onclick="showPage('projects'); return false;" class="back-button">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 19l-7-7 7-7" />
+              </svg>
+              Back to Projects
+            </a>
+    
+            <h1 class="project-title">
+              <span class="gradient-text">Blockchain Insights Pipeline</span>
+            </h1>
+    
+            <p class="project-description">
+              Fully automated ETL and analytics pipeline that ingests live Ethereum blockchain data
+              and market prices, stores raw data in PostgreSQL, transforms it with dbt,
+              and ensures data completeness via scheduled repair jobs orchestrated with Apache Airflow.
+            </p>
+    
+            <div class="project-detail-image"></div>
+    
+            <div class="key-highlights">
+              <h3>Key Highlights</h3>
+              <ul>
+                <li>Incremental ingestion of Ethereum blocks and transactions</li>
+                <li>Hourly price data ingestion from Binance</li>
+                <li>Daily gap repair to ensure full historical coverage</li>
+                <li>Analytics-ready transformations using dbt</li>
+                <li>End-to-end orchestration with Apache Airflow DAGs</li>
+                <li>Fully reproducible local setup using Docker</li>
+              </ul>
+            </div>
+    
+            <div class="tech-stack">
+              <h3>Tech Stack</h3>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Apache Airflow</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">dbt</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Etherscan API</span>
+                <span class="tag">Binance API</span>
+              </div>
+            </div>
+    
+            <div class="project-detail-actions">
+              <a href="https://github.com/kyriakosg4/Blockchain_Insights_Pipeline"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="btn btn-primary">
+                View on GitHub
+              </a>
+    
+              <a href="#" onclick="showPage('projects'); return false;" class="btn btn-secondary">
+                Back to Projects
+              </a>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+    </div>
+
 
 
     <div id="about" class="page">
